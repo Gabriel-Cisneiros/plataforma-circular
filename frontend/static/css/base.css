@@ -1,0 +1,107 @@
+body {
+  width: 100%;
+  height: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  margin: 0;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 107px;
+  box-shadow: unset;
+  box-shadow: 0px 3px 20px #3f4b6614;
+  z-index: 50;
+  position: fixed;
+}
+.navbar__items {
+  width: 100%;
+  max-width: 1160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar__image {
+  display: flex;
+  justify-content: flex-start;
+  width: 160px;
+  height: 40px;
+  padding-right: 75.75px;
+  padding-left: 15px;
+  cursor: pointer;
+}
+.navbar__links {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #1B2634;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.navbar__button {
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #1B2634;
+  border-radius: 24px;
+  width: 15%;
+  height: 41px;
+  margin-right: 15px;
+  margin-left: 15px;
+  color: #1B2634;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+.navbar__button:hover {
+  color: #CBD42F;
+  border-color: #CBD42F;
+}
+#navbar__menu-icon {
+  font-size: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+}
+@media (max-width: 991px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+    width: 100%;
+    height: 107px;
+    z-index: 50;
+    position: fixed;
+  }
+  .navbar__items {
+    width: 100%;
+    max-width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .navbar__image {
+    width: 160px;
+    height: 40px;
+    padding-right: 75.75px;
+    padding-left: 15px;
+    cursor: pointer;
+  }
+  .navbar__links {
+    display: none;
+  }
+  .navbar__button {
+    display: none;
+  }
+  .navbar__button:hover {
+    display: none;
+  }
+  #navbar__menu-icon {
+    font-size: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+  }
+}
