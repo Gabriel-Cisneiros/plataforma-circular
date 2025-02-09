@@ -27,11 +27,70 @@
       </div>
     </nav>
   </header>
+  <aside id="sidebar" class="sidebar" >
+    <a id="sidebar__close-btn" class="sidebar__close-btn" >
+      <i id="close-btn__icon" class="material-icons">close</i>
+    </a>
+    <a href="#" class="sidebar__btn">
+      <div class="btn__content">
+        <i class="material-icons">home</i>
+        Home
+      </div>
+    </a>
+    <a href="#" class="sidebar__btn--mobile">
+      <div class="btn__content">
+        <i class="material-icons">compost</i>
+        Descarte Aqui
+      </div>
+    </a>
+    <a href="#" class="sidebar__btn--mobile">
+      <div class="btn__content">
+        <i class="material-icons">groups</i>
+        Quem Somos
+      </div>
+    </a>
+    <a href="#" class="sidebar__btn--mobile">
+      <div class="btn__content">
+        <i class="material-icons">eco</i>
+        Sobre a Plataforma
+      </div>
+    </a>
+    <a href="#" class="sidebar__btn">
+      <div class="btn__content">
+        <i class="material-icons">recycling</i>
+        Economia Circular
+      </div>
+    </a>
+    <a href="#" class="sidebar__btn">
+      <div class="btn__content">
+        <i class="material-icons">my_location</i>
+        Rastreabilidade
+      </div>
+    </a>
+    <a href="#" class="sidebar__btn--mobile">
+      <div class="btn__content">
+        <i class="material-icons">newspaper</i>
+        Fique por Dentro
+      </div>
+    </a>
+    <a href="#" class="sidebar__btn">
+      <div class="btn__content">
+        <i class="material-icons">mail</i>
+        Contato
+      </div>
+    </a>
+    <a href="#" class="sidebar__btn">
+      <div class="btn__content">
+        <i class="material-icons">live_help</i>
+        faq
+      </div>
+    </a>
+  </aside>
 
   <main>
     {% block content %}{% endblock %}
   </main>
 
-<script src="{% static 'js/script.js' %}"></script>  
+<script src="{% static 'js/sidebar_function.js' %}"></script>  
 </body>
 </html>

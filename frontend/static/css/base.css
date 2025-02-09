@@ -1,3 +1,6 @@
+
+/* TOP NAVBAR */
+
 body {
   width: 100%;
   height: 100%;
@@ -13,7 +16,7 @@ body {
   height: 107px;
   box-shadow: unset;
   box-shadow: 0px 3px 20px #3f4b6614;
-  z-index: 50;
+  z-index: 1;
   position: fixed;
 }
 .navbar__items {
@@ -40,7 +43,7 @@ body {
   padding-right: 15px;
 }
 .navbar__button {
-  background-color: #FFFFFF;
+  background-color: transparent;
   border-style: solid;
   border-width: 1px;
   border-color: #1B2634;
@@ -65,6 +68,9 @@ body {
   padding-right: 15px;
   cursor: pointer;
 }
+
+/* TOP NAVBAR RESPONSIVE */
+
 @media (max-width: 991px) {
   .navbar {
     display: flex;
@@ -73,7 +79,7 @@ body {
     box-shadow: none;
     width: 100%;
     height: 107px;
-    z-index: 50;
+    z-index: 1;
     position: fixed;
   }
   .navbar__items {
@@ -104,4 +110,66 @@ body {
     padding-right: 15px;
     cursor: pointer;
   }
+}
+
+/* SIDE NAVBAR */
+
+.sidebar {
+  background-color: #1B2634F0;
+	position: fixed;
+	transform: translateX(0);
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 0px;
+	transition: 0.3s;
+	z-index: 2;
+	justify-content: normal;
+	font-size: 16px;
+	list-style-type: none;
+}
+.sidebar__btn {
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+	width: 81%;
+	padding: 35px 45px;
+	color: #FFFFFF;
+  border-bottom: 1px solid #3F4B65;
+}
+.btn__content {
+  display: flex;
+  gap: 7px;
+}
+.sidebar__btn--mobile {
+  display: none;
+}
+.sidebar__close-btn {
+  text-decoration: none;
+  color: #FFFFFF;
+  width: 81%;
+	padding: 35px 45px;
+  display: flex;
+  justify-content: flex-end;
+}
+#close-btn__icon{
+  cursor: pointer;
+}
+
+/* SIDE NAVBAR RESPONSIVE */
+
+@media (max-width: 991px) {
+.sidebar {
+  overflow-y: scroll;
+}
+.sidebar__btn--mobile {
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+	width: 81%;
+	padding: 35px 45px;
+	color: #FFFFFF;
+  border-bottom: 1px solid #3F4B65;}
 }
